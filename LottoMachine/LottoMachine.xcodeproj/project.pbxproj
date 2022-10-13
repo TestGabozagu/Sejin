@@ -17,6 +17,8 @@
 		CE6ED38728F7F724004563C9 /* LottoMachineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ED38628F7F724004563C9 /* LottoMachineUITests.swift */; };
 		CE6ED38928F7F724004563C9 /* LottoMachineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ED38828F7F724004563C9 /* LottoMachineUITestsLaunchTests.swift */; };
 		CE6ED39728F7F87E004563C9 /* LottoMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ED39628F7F87E004563C9 /* LottoMachine.swift */; };
+		CE6ED39928F80B1A004563C9 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ED39828F80B1A004563C9 /* Calculator.swift */; };
+		CE6ED3A128F80B77004563C9 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ED3A028F80B77004563C9 /* CalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,13 @@
 			remoteInfo = LottoMachine;
 		};
 		CE6ED38328F7F724004563C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE6ED35A28F7F723004563C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE6ED36128F7F723004563C9;
+			remoteInfo = LottoMachine;
+		};
+		CE6ED3A228F80B77004563C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE6ED35A28F7F723004563C9 /* Project object */;
 			proxyType = 1;
@@ -51,6 +60,9 @@
 		CE6ED38628F7F724004563C9 /* LottoMachineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoMachineUITests.swift; sourceTree = "<group>"; };
 		CE6ED38828F7F724004563C9 /* LottoMachineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoMachineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE6ED39628F7F87E004563C9 /* LottoMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoMachine.swift; sourceTree = "<group>"; };
+		CE6ED39828F80B1A004563C9 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		CE6ED39E28F80B77004563C9 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6ED3A028F80B77004563C9 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE6ED39B28F80B77004563C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +103,7 @@
 				CE6ED36428F7F723004563C9 /* LottoMachine */,
 				CE6ED37B28F7F724004563C9 /* LottoMachineTests */,
 				CE6ED38528F7F724004563C9 /* LottoMachineUITests */,
+				CE6ED39F28F80B77004563C9 /* CalculatorTests */,
 				CE6ED36328F7F723004563C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +114,7 @@
 				CE6ED36228F7F723004563C9 /* LottoMachine.app */,
 				CE6ED37828F7F724004563C9 /* LottoMachineTests.xctest */,
 				CE6ED38228F7F724004563C9 /* LottoMachineUITests.xctest */,
+				CE6ED39E28F80B77004563C9 /* CalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,8 +155,17 @@
 			isa = PBXGroup;
 			children = (
 				CE6ED39628F7F87E004563C9 /* LottoMachine.swift */,
+				CE6ED39828F80B1A004563C9 /* Calculator.swift */,
 			);
 			path = UnitTestSample;
+			sourceTree = "<group>";
+		};
+		CE6ED39F28F80B77004563C9 /* CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE6ED3A028F80B77004563C9 /* CalculatorTests.swift */,
+			);
+			path = CalculatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +224,24 @@
 			productReference = CE6ED38228F7F724004563C9 /* LottoMachineUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CE6ED39D28F80B77004563C9 /* CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6ED3A428F80B77004563C9 /* Build configuration list for PBXNativeTarget "CalculatorTests" */;
+			buildPhases = (
+				CE6ED39A28F80B77004563C9 /* Sources */,
+				CE6ED39B28F80B77004563C9 /* Frameworks */,
+				CE6ED39C28F80B77004563C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE6ED3A328F80B77004563C9 /* PBXTargetDependency */,
+			);
+			name = CalculatorTests;
+			productName = CalculatorTests;
+			productReference = CE6ED39E28F80B77004563C9 /* CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,6 +263,10 @@
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = CE6ED36128F7F723004563C9;
 					};
+					CE6ED39D28F80B77004563C9 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = CE6ED36128F7F723004563C9;
+					};
 				};
 			};
 			buildConfigurationList = CE6ED35D28F7F723004563C9 /* Build configuration list for PBXProject "LottoMachine" */;
@@ -233,6 +285,7 @@
 				CE6ED36128F7F723004563C9 /* LottoMachine */,
 				CE6ED37728F7F724004563C9 /* LottoMachineTests */,
 				CE6ED38128F7F724004563C9 /* LottoMachineUITests */,
+				CE6ED39D28F80B77004563C9 /* CalculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +315,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE6ED39C28F80B77004563C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,6 +332,7 @@
 				CE6ED39728F7F87E004563C9 /* LottoMachine.swift in Sources */,
 				CE6ED36A28F7F723004563C9 /* ViewController.swift in Sources */,
 				CE6ED36628F7F723004563C9 /* AppDelegate.swift in Sources */,
+				CE6ED39928F80B1A004563C9 /* Calculator.swift in Sources */,
 				CE6ED36828F7F723004563C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +354,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE6ED39A28F80B77004563C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6ED3A128F80B77004563C9 /* CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -305,6 +374,11 @@
 			isa = PBXTargetDependency;
 			target = CE6ED36128F7F723004563C9 /* LottoMachine */;
 			targetProxy = CE6ED38328F7F724004563C9 /* PBXContainerItemProxy */;
+		};
+		CE6ED3A328F80B77004563C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE6ED36128F7F723004563C9 /* LottoMachine */;
+			targetProxy = CE6ED3A228F80B77004563C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -568,6 +642,48 @@
 			};
 			name = Release;
 		};
+		CE6ED3A528F80B77004563C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sejin.CalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LottoMachine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LottoMachine";
+			};
+			name = Debug;
+		};
+		CE6ED3A628F80B77004563C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sejin.CalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LottoMachine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LottoMachine";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -603,6 +719,15 @@
 			buildConfigurations = (
 				CE6ED39328F7F724004563C9 /* Debug */,
 				CE6ED39428F7F724004563C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6ED3A428F80B77004563C9 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6ED3A528F80B77004563C9 /* Debug */,
+				CE6ED3A628F80B77004563C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
